@@ -65,7 +65,6 @@ footer {
 .nav-bar--item a:hover {
     font-weight: 600;
     font-size: 1.1em ;
-    background-color: var(--color_separating-lines)
 }
 
 #welcome-section {
@@ -93,6 +92,12 @@ footer {
     position: absolute;
     top: 25vh;
     left: 0;
+}
+
+.second-hero-image {
+    display: none;
+    position: absolute;
+    top: 25vh;
 }
 
 .presentation {
@@ -206,28 +211,55 @@ footer {
 /* large devices and wide screens */  
 @media (min-width: 1200px) {
     .hero-image {
-        display: none;
+        display: inline;    
+        height: 50vh;
+        width: auto;
+        opacity: 1;
+        position: absolute;
+        left: 1vw;
+        top: 25vh;
+    }
+
+    .second-hero-image {
+        display: inline;
+        float: right;
+        height: 50vh;
+        width: auto;
+        right: 1vw;
+        top: 25vh;
+
     }
 
     .title {
-        top: 20vh;
+        top: 15vh;
     }
 
     .presentation {
-        bottom: 20vh;
+        bottom: 10vh;
 
+    }   
+
+    .nav-bar--item {
+        font-size: 2em;
     }
-
-
-    
 }
 
 @media (max-height: 540px) {
+
+    
     .hero-image {
         height: 40vh;
         width: auto;
-        left: 40vw;
+        left: 25vw;
         top: 40vh;
+    }
+
+    .second-hero-image {
+        display: inline;
+        height: 40vh;
+        width: auto;
+        top: 40vh;
+        right: 25vw;
     }
 
     .title {
@@ -235,4 +267,3 @@ footer {
         margin: 0 auto;
     }
 }
-)
