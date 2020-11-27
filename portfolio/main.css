@@ -118,8 +118,21 @@ footer {
 .plain-text {
     font-weight: 300;
     text-align: justify;
-    margin: 0 5vw;
+    margin: 1.5vw 5vw;
 }
+
+.profile-picture {
+    width: 25%;
+    height: auto;
+    padding: 10px;
+    margin-left: 25px;
+
+}
+/* 
+.wrap-picture {
+    float: right;
+    width: 60% ;
+} */
 
 .social-media {
     display: flex;
@@ -241,6 +254,11 @@ footer {
 
     .nav-bar--item {
         font-size: 2em;
+    }
+    
+    .profile-picture {
+        height: 300px;
+        width: auto;
     }
 }
 
