@@ -77,7 +77,7 @@ p {
   width: 90%;
 }
 
-#logograms .wrapper {
+.wrapper {
   background-color: white;
   -webkit-box-shadow: 0px 1px 4px #9b1504;
           box-shadow: 0px 1px 4px #9b1504;
@@ -87,7 +87,8 @@ p {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1vh;
 }
-#logograms .wrapper .logogram-info {
+
+.logogram-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,13 +103,13 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-#logograms .wrapper .logogram-info img {
+.logogram-info img {
   width: 35vw;
   height: auto;
   max-width: 1500px;
 }
 
-#starring .cards-container {
+.cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +124,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-#starring .cards-container .flip-card {
+
+.flip-card {
   padding: 2vh;
   -webkit-box-shadow: 0px 1px 4px #61737a;
           box-shadow: 0px 1px 4px #61737a;
@@ -142,100 +144,15 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow: hidden;
 }
 
-#directed .cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#directed .cards-container .flip-card {
-  padding: 2vh;
-  -webkit-box-shadow: 0px 1px 4px #61737a;
-          box-shadow: 0px 1px 4px #61737a;
-  border-radius: 10%;
-  margin: 1vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: black;
-}
-
-#based-on .cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#based-on .cards-container .flip-card {
-  padding: 2vh;
-  -webkit-box-shadow: 0px 1px 4px #61737a;
-          box-shadow: 0px 1px 4px #61737a;
-  margin: 1vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-}
-
-.flip-card-image--starring {
+.flip-card-image {
   width: 65vw;
   height: auto;
   max-width: 500px;
   border-radius: 50%;
-}
-
-.flip-card-image--directed {
-  width: 65vw;
-  height: auto;
-  max-width: 500px;
-  border-radius: 20%;
-}
-
-.flip-card-image--book {
-  width: 65vw;
-  height: auto;
-  max-width: 500px;
 }
 
 .flip-card--back h3 {
@@ -290,6 +207,10 @@ p {
     font-size: 1rem;
   }
 
+  h3 {
+    font-size: 0.75rem;
+  }
+
   .hero-image_container {
     background-image: url(/tribute-page/img/arrival-desktop.jpg);
   }
@@ -300,17 +221,18 @@ p {
     margin: 0;
   }
 
-  #logograms .wrapper {
+  .wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  #logograms .wrapper .logogram-info img {
+
+  .logogram-info img {
     width: 20vw;
     height: auto;
     max-width: 1500px;
   }
 
-  #starring .cards-container, #directed .cards-container, #based-on .cards-container {
+  .cards-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -321,15 +243,7 @@ p {
     padding: 5vh;
   }
 
-  .flip-card-image--starring {
-    width: 20vw;
-  }
-
-  .flip-card-image--directed {
-    width: 20vw;
-  }
-
-  .flip-card-image--book {
+  .flip-card-image {
     width: 20vw;
   }
 
@@ -343,5 +257,9 @@ p {
   }
   .hero-image_container h2 {
     margin: 0;
+  }
+
+  .flip-card {
+    padding: 2vh;
   }
 }

@@ -6,6 +6,10 @@
         font-size: $font-small;
     }
 
+    h3 {
+        font-size: $font-supersmall;
+    }
+
     .hero-image_container {
         background-image: url(/tribute-page/img/arrival-desktop.jpg);
     
@@ -18,43 +22,29 @@
         }
     }
 
-    
-    #logograms {
-        .wrapper {
-            grid-template-columns: 1fr 1fr 1fr 1fr; 
-            grid-template-rows: 1fr 1fr;
-    
-            .logogram-info {
-            
-                img {
-                    width: 20vw;
-                    height: auto;
-                    max-width: 1500px;
-                }
-            }
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .logogram-info {
+        
+        img {
+            width: 20vw;
+            height: auto;
+            max-width: 1500px;
         }
     }
 
-    #starring, #directed, #based-on {
-
-        .cards-container {
-            flex-direction: row;
-        }
+    .cards-container {
+        flex-direction: row;
     }
 
     .flip-card {
         padding: 5vh;
     }
 
-    .flip-card-image--starring {
-        width: 20vw;
-    }
-
-    .flip-card-image--directed {
-        width: 20vw;
-    }
-
-    .flip-card-image--book {
+    .flip-card-image {
         width: 20vw;
     }
 
@@ -75,61 +65,10 @@
             margin: 0;
         }
     }
+
+    .flip-card {
+        padding: 2vh;
+    }
 }
 
-@media (min-width: $laptop-breakpoint) {
-
-    // .desktop-only {
-    //     display: inherit;
-    // }
-
-//     #starring, #directed, #basedon {
-
-//         .cards-container {
-    
-//             .flip-card {
-//                 padding: 2vh;
-//                 box-shadow: 0px 1px 4px $secondary-dark-color;
-//                 border-radius: 40%;
-//                 margin: 1vh;
-//                 display: flex;
-//                 flex-direction: column;
-//                 justify-content: center;
-//                 align-items: center;
-//                 background-color: transparent;
-//                 perspective: 1000px;
-
-//                 .flip-card-inner {
-//                     position: relative;
-//                     width: 100%;
-//                     height: 100%;
-//                     text-align: center;
-//                     transition: transform 0.8s;
-//                     transform-style: preserve-3d;
-                    
-//                     .flip-card-front, .flip-card-back {
-//                         position: absolute;
-//                         width: 100%;
-//                         height: 100%;
-//                         -webkit-backface-visibility: hidden; /* Safari */
-//                         backface-visibility: hidden;
-//                     }
-
-//                     .flip-card-front {
-//                         background-color: $main-dark-color;
-//                         color: $main-light-color;
-//                       }
-                    
-//                     .flip-card-back {
-//                         background-color: $main-dark-color;
-//                         color: $main-light-color;
-//                         transform: rotateY(180deg);
-                      
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-}
     
