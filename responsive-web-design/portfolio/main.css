@@ -215,6 +215,11 @@ a {
     color: var(--color_main);
 }
 
+.project-miniature {
+    width: 40vw;
+    height: auto;
+}
+
 @media (min-width: 560px) {
     
     p.large-vh {
@@ -281,5 +286,13 @@ a {
         margin: 0 auto;
         background-color: var(--color_transparent-text);
         color: var(--color_main);
+        overflow: hidden;
+    }
+
+    .project-miniature {
+        height: 35vh;
+        width: auto;
+        opacity: 0.7;
+
     }
 }
