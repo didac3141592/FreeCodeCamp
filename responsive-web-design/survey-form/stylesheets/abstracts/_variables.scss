@@ -1,0 +1,74 @@
+// C O L O R S //
+
+/// background color
+/// @type Color
+$background-color: rgb(215, 226, 229) !default;
+
+/// main dark color
+/// @type Color
+$main-dark-color: rgb(0, 0, 0) !default;
+
+/// transparent dark color
+/// @type Color
+$transparent-dark-color: rgba(0, 0, 0, 0.85) !default;
+
+/// main light color
+/// @type Color
+$main-light-color: rgb(255, 255, 255) !default;
+
+/// contrast color #1
+/// @type Color
+$main-contrast-color: rgb(155, 21, 4) !default;
+
+/// contrast color #2
+/// @type Color
+$secondary-contrast-color: rgba(155, 21, 4, 0.65) !default;
+
+/// auxiliary color #1
+/// @type Color
+$auxiliary-color: rgb(97, 115, 122) !default;
+
+/// auxiliary color #2
+/// @type Color
+$secondary-auxiliary-color: rgb(204, 204, 202) !default;
+
+///  F O N T  & F O N T  T Y P E S
+/// @type List
+$main-font: 'Roboto Slab', monospace;
+
+/// @prop {String} keys
+/// @prop {Map} values
+$font-weight: (
+    'light': 200,
+    'normal': 300,
+    'bold': 400,
+) !default;
+
+/// @prop {String} keys
+/// @prop {Map} values
+$font-size: (
+    'footer': 0.8rem,
+    'super-small': 0.75rem,
+    'small': 1rem,
+    'medium': 2rem,
+    'big': 4rem,
+) !default;
+
+
+// B R E A K P O I N T S
+/// @prop {String} keys
+/// @prop {Map} values
+$breakpoints: (
+    'landscape': 560px,
+    'tablet': 760px,
+    'laptop': 1024px,
+) !default;
+
+/// C O N T A I N E R ' S  M A X I M U M  W I D T H
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
