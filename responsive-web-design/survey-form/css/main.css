@@ -11,8 +11,48 @@ html {
 body {
   width: 100%;
   margin: 0 auto;
-  background-color: #d7e2e5;
+  background-color: whitesmoke;
+  color: black;
   font-family: "Roboto Slab", monospace;
+  font-weight: 200;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  padding: 1vh 5vw;
+  text-align: center;
+}
+form label {
+  display: block;
+  margin: 2.5vh;
+}
+
+.form-item {
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.85);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.85);
+  margin: 2vh 0;
+  padding: 10vh 15vw;
+}
+
+.personal-information .form-item {
+  background-color: rgba(0, 17, 255, 0.425);
+}
+
+.literature-information .form-item {
+  background-color: rgba(0, 255, 98, 0.404);
+}
+
+.movie-information .form-item {
+  background-color: rgba(243, 255, 70, 0.432);
+}
+
+.checkbox-list label {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /**
@@ -75,7 +115,28 @@ body {
 }
 
 header {
-  margin: 5vh 5vw;
+  padding: 5vh 5vw;
+}
+@media (max-width: 760px) {
+  header {
+    height: 100vh;
+    padding: 20vh 5vw;
+  }
+}
+
+#title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+#subtitle {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+#description {
+  text-align: justify;
 }
 
 footer {

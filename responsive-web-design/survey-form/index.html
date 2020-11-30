@@ -16,52 +16,122 @@
     </header>
     <body>
         <form id="survey-form" action="#" method="POST">
-            <div class="form-item">
-                <label id="number-label" for="age">How old are you?</label>
-                <input type="number" id="age" name="age" min="18" max="40" placeholder="Enter your age in years">
+            <div class="form-section personal-information">
+                <p>Let's start with some basic information about you</p>
+                <div class="form-item">
+                    <label id="number-label" for="age">How old are you?</label>
+                    <input type="number" id="age" name="age" min="18" max="40" placeholder="Age">
+                </div>
+                <div class="form-item">
+                    <label id="name-label" for="name">What's your name?</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                </div>
+                <div class="form-item">
+                    <label for="zodiac-sign">What are you?</label>
+                    <select name="zodiac-sign" id="dropdown">
+                        <option value="" disabled selected hidden>Signs</option>
+                        <option value="aries">Aries</option>
+                        <option value="taurus">Taurus</option>
+                        <option value="gemini">Gemini</option>
+                        <option value="cancer">Cancer</option>
+                        <option value="leo">Leo</option>
+                        <option value="virgo">Virgo</option>
+                        <option value="libra">Libra</option>
+                        <option value="scorpio">Scorpio</option>
+                        <option value="saggitarius">Saggitarius</option>
+                        <option value="capricorn">Capricon</option>
+                        <option value="aquarius">Aquarius</option>
+                        <option value="pisces">Pisces</option>
+                    </select>
+                </div>
             </div>
-            <div class="form-item">
-                <label id="name-label" for="name">What's your name?</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name">
+            <div class="form-section literature-information">
+                <p>Now... books play a great role in my life, so this section is compulsory.</p>
+                <div class="form-item">
+                    <label for="last-book-read">Last book you read?</label>
+                    <input type="text" id="last-book-read" name="last-book-read">
+                </div>
+                <div class="form-item">
+                    <label for="book-reading">Book currently reading?</label>
+                    <input type="text" id="book-reading" name="book-reading">
+                </div>
+                <div class="form-item">
+                    <label for="book-to-read">Next book in your to-read list?</label>
+                    <input type="text" id="book-to-read" name="book-to-read">
+                </div>
             </div>
-            <div class="form-item">
-                <label for="zodiac-sign">What are you?</label>
-                <select name="zodiac-sign" id="dropdown">
-                    <option value="" disabled selected hidden>Select your sign</option>
-                    <option value="aries">Aries</option>
-                    <option value="taurus">Taurus</option>
-                    <option value="gemini">Gemini</option>
-                    <option value="cancer">Cancer</option>
-                    <option value="leo">Leo</option>
-                    <option value="virgo">Virgo</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Scorpio</option>
-                    <option value="saggitarius">Saggitarius</option>
-                    <option value="capricorn">Capricon</option>
-                    <option value="aquarius">Aquarius</option>
-                    <option value="pisces">Pisces</option>
-                </select>
+            <div class="form-section movie-information">
+                <p>Something similar happens with movies.</p>
+                <div class="form-item">
+                    <label for="most-watched-movie">Most watched movie? (non-animated)</label>
+                    <input type="text" id="most-watched-movie" name="most-watched-movie">
+                </div>
+                <div class="form-item">
+                    <label for="most-watched-movie-animated">Most watched animated movie?</label>
+                    <input type="text" id="most-watched-movie-animated" name="most-watched-movie-animated">
+                </div>
+                <div class="form-item pixar-checkbox"> 
+                    <p>Which of the following movies are from Pixar Animation Studios?</p>
+                    <div class="wrapper">
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie1" name="movie1" value="despicable-me">
+                            <label for="movie1">Despicable me</label>   
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie2" name="movie2" value="shrek">
+                        <label for="movie2">Shrek</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie3" name="movie3" value="up">
+                        <label for="movie3">Up</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie4" name="movie4" value="finding-nemo">
+                            <label for="movie4">Finding Nemo</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie5" name="movie5" value="coco">
+                            <label for="movie5">Coco</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie6" name="movie6" value="the-good-dinosaur">
+                            <label for="movie6">The Good Dinosaur</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie7" name="movie7" value="brave">
+                            <label for="movie7">Brave</label>
+                        </div>
+                        <div class="grid-element">
+                            <input type="checkbox" id="movie8" name="movie8" value="spirit">
+                            <label for="movie8">Spirit</label>
+                        </div>
+                        <div class="grid-element">
+
+                        </div>
+                        <div class="grid-element">
+
+                        </div>
+                       
+                        
+                        
+                       
+                       
+                       
+                       
+                       
+                        
+                        <input type="checkbox" id="movie10" name="movie10" value="soul">
+                        <label for="movie10">Soul</label>
+
+                    </div>
+                   
+                </div>
             </div>
-            <div class="form-item">
-                <label for="last-book-read">Last book you read?</label>
-                <input type="text" id="last-book-read" name="last-book-read">
+            <div class="form-section shrek">
+
             </div>
-            <div class="form-item">
-                <label for="book-reading">Book currently reading?</label>
-                <input type="text" id="book-reading" name="book-reading">
-            </div>
-            <div class="form-item">
-                <label for="book-to-read">Next book in your to-read list?</label>
-                <input type="text" id="book-to-read" name="book-to-read">
-            </div>
-            <div class="form-item">
-                <label for="most-watched-movie">Most watched movie? (non-animated)</label>
-                <input type="text" id="most-watched-movie" name="most-watched-movie">
-            </div>
-            <div class="form-item">
-                <label for="most-watched-movie-animated">Most watched animated movie?</label>
-                <input type="text" id="most-watched-movie-animated" name="most-watched-movie-animated">
-            </div>
+           
+           
             <div class="form-item">
                 <label for="opinion-shrek">What is your opinion on the Shrek movies?</label>
                 <input type="text" id="opinion-shrek" name="opinion-shrek">
@@ -77,29 +147,7 @@
                 <input type="radio" name="shrek" id="shrek4" value="shrek4">
                 <label for="shrek1">Shrek 4</label>
             </div>
-            <div>
-                <p>Which of the following movies are from Pixar Animation Studios?</p>
-                <input type="checkbox" id="movie1" name="movie1" value="despicable-me">
-                <label for="movie1">Despicable me</label>
-                <input type="checkbox" id="movie2" name="movie2" value="shrek">
-                <label for="movie2">Shrek</label>
-                <input type="checkbox" id="movie3" name="movie3" value="up">
-                <label for="movie3">Up</label>
-                <input type="checkbox" id="movie4" name="movie4" value="finding-nemo">
-                <label for="movie4">Finding Nemo</label>
-                <input type="checkbox" id="movie5" name="movie5" value="coco">
-                <label for="movie5">Coco</label>
-                <input type="checkbox" id="movie6" name="movie6" value="the-good-dinosaur">
-                <label for="movie6">The Good Dinosaur</label>
-                <input type="checkbox" id="movie7" name="movie7" value="brave">
-                <label for="movie7">Brave</label>
-                <input type="checkbox" id="movie8" name="movie8" value="spirit">
-                <label for="movie8">Spirit</label>
-                <input type="checkbox" id="movie9" name="movie9" value="bee">
-                <label for="movie9">Bee Movie</label>
-                <input type="checkbox" id="movie10" name="movie10" value="soul">
-                <label for="movie10">Soul</label>
-            </div>
+      
             <div>
                 <p>Do you know who Kendrick Lamar is?</p>
                 <input type="radio" id="yes" name="kendrick" value="yes">
