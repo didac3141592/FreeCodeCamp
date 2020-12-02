@@ -33,7 +33,6 @@ $auxiliary-color: rgb(97, 115, 122) !default;
 /// @type Color
 $secondary-auxiliary-color: rgb(204, 204, 202) !default;
 
-
 /// card set color #1
 /// @type Color
 $card-color1: rgba(0, 17, 255, 0.425) !default;
@@ -45,9 +44,15 @@ $card-color2: rgba(0, 255, 98, 0.404) !default;
 /// auxiliary color #3
 /// @type Color
 $card-color3: rgba(243, 255, 70, 0.432) !default;
-/// auxiliary color #2
+
+/// auxiliary color #4
 /// @type Color
-$card-color4: rgba(70, 255, 141, 0.685) !default;
+$card-color4: rgba(255, 153, 70, 0.685) !default;
+
+/// auxiliary color #5
+/// @type Color
+$card-color5: rgba(255, 70, 70, 0.685) !default;
+
 
 
 
