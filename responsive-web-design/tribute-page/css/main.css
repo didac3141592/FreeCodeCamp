@@ -53,7 +53,7 @@ p {
 
 .hero-image_container {
   height: 100vh;
-  background-image: url(/tribute-page/img/arrival-mobile.jpg);
+  background-image: url(../arrival-mobile.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -212,7 +212,7 @@ p {
   }
 
   .hero-image_container {
-    background-image: url(/tribute-page/img/arrival-desktop.jpg);
+    background-image: url(../img/arrival-desktop.jpg);
   }
   .hero-image_container h1 {
     padding: 2vh 5vw 0 5vw;
